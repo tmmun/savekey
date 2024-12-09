@@ -1,0 +1,86 @@
+body {
+  background-color: #101010;
+  font-family: "Comfortaa", sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+#base {
+  background-color: #171717;
+  width: 500px;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.my_inp {
+  padding: 8px;
+  width: 440px;
+  height: 19px;
+  border-radius: 5px;
+  outline: none;
+  background-color: #232324;
+  border-width: 0px;
+  font-family: "Comfortaa", sans-serif;
+  color: white;
+  font-size: 17px;
+}
+
+.my_text {
+  width: 500px;
+  background-color: #232324;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 3px;
+}
+
+.my_but {
+  margin-right: 10px;
+}
+
+.my_img {
+  background-color: #171717;
+  width: 500px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.base_inp {
+  display: flex;
+  align-items: center;
+}
+
+#cell {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #232324;
+  margin-bottom: 10px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#cell_text {
+  font-size: 15px;
+}
+
+#arh_base{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#base_img {
+  width: 500px;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
