@@ -1,31 +1,28 @@
 { //save text
 
     let my_words = []
-    let arrName = ['text', 'text2', 'text3']
+    let arrName = ['text', 'text2', 'text3', 'text4', 'text5', 'text6', 'text7', 'text8', 'text9', 'text10']
     let arrCo = 0
     let co = 0
 
-    $(".my_arh0").click(function () {
 
-        $(".celss").empty()
-        arrCo = 0
-        StartArr()
+    $('.save_inp').hide()
 
-    })
+    for (i = 0; i < arrName.length; i++) {
 
-    $(".my_arh1").click(function () {
+        $(".arh_base").append('<img id="my_arh" onclick="arhOpen(' + i + ')" class="my_arh' + i + '" src="./img/arh.svg" alt="">')
+        console.log('d')
+    }
 
-        $(".celss").empty()
-        arrCo = 1
-        StartArr()
+    $(".my_key").click(function () {
 
-    })
+        if ($(".my_inp_key").val() != '') {
+            my_words = $(".my_inp_key").val().split(",")
 
-    $(".my_arh2").click(function () {
-
-        $(".celss").empty()
-        arrCo = 2
-        StartArr()
+            for (i = 0; i < my_words.length; i++) {
+                CreateCell(i)
+            }
+        }
 
     })
 
@@ -102,6 +99,15 @@
             }
 
         }
+    }
+
+    function arhOpen(num) {
+
+        $('.save_inp').show()
+        $(".celss").empty()
+        arrCo = num
+        StartArr()
+        $(".my_inp_arh").val(localStorage.getItem(arrName[num]).split(","))
     }
 
 }
